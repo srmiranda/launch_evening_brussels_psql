@@ -53,13 +53,13 @@ db_connection do |conn|
   end
 end
 
-db_connection do |conn|
-  conn.exec("
-  SELECT recipes.recipe_id, recipes.recipe, comments.comment_id, comments.comment
-  FROM recipes
-  JOIN comments ON recipes.recipe_id = comments.comment_id
-  ORDER BY recipes.recipe_id ASC")
-end
+# db_connection do |conn|
+#   conn.exec("
+#   SELECT recipes.recipe_id, recipes.recipe, comments.comment_id, comments.comment
+#   FROM recipes
+#   JOIN comments ON recipes.recipe_id = comments.comment_id
+#   ORDER BY recipes.recipe_id ASC")
+# end
 
 
 # QUESTIONS:
